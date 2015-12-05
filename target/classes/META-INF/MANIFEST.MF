@@ -6,5 +6,5 @@ Implementation-Vendor-Id: ProjectSys
 Build-Jdk: 1.7.0_80
 Built-By: Administrator
 Created-By: Maven Integration for Eclipse
-Main-Class: start.boot.Application
+Main-Class: org.project.Application
 

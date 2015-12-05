@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> 模板导入</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/page-min.css" rel="stylesheet" type="text/css" />  
+ </head>
+ <body>
+  
+  <div class="container">
+      <form id="J_Form" class="form-horizontal" method="post" action="template/doUpload" enctype="multipart/form-data">
+ 		  <div class="row form-actions actions-bar">
+            <div class="span13 offset3 ">
+              <input type="file" name="file"></input>
+              <button type="submit" class="button button-primary">导入</button>
+              <button type="reset" class="button">重置</button>
+            </div>
+          </div>
+      </form>
+  </div>
+  <script type="text/javascript" src="../../assets/js/jquery-1.8.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/bui-min.js"></script>
+  <!-- 如果不使用页面内部跳转，则下面 script 标签不需要,同时不需要引入 common/page -->
+  <script type="text/javascript" src="../../assets/js/config-min.js"></script>
+ 
+  <script type="text/javascript">
+    BUI.use('common/page'); //页面链接跳转
+ 
+    BUI.use('bui/form',function (Form) {
+      var form = new Form.HForm({
+        srcNode : '#J_Form'
+      });
+ 
+      form.render();
+    });
+  </script>
+ 
+<body>
+</html> 
